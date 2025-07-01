@@ -6,10 +6,12 @@ __Abstract:__ Time series forecasting is the problem of predicting future data s
 Each directory includes the "C simulation" and  "synthesis" sub-directory. "C simulation" is the code to verify computation correctness, and the "synthesis" is the code to generate the FPGA .bin file.
 
 ### BM_GEMM
-It includes the BM GEMM kernel implementation that supports runtime configuration of precision. The top function is the function _bmGemmv25_ in bmgemm_hw.h.
+It includes the BM GEMM kernel implementation that supports runtime configuration of precision. The top function is the function _bmGemmv25_ in bmgemm_hw.h.   
+![BM GEMM kernel](images/BMGEMM.png)  
 
 ### training_accelerator 
-It includes the N-BEATS training implementation using the BM GEMM kernel. The top function is the function _Train_ in train.h.
+It includes the N-BEATS training implementation using the BM GEMM kernel. The top function is the function _Train_ in train.h.  
+![N-BEATS training accelerator](images/trainsystem_v2.png)
 
 ## 2. Hardware specification
 - Hardware Device: Xilinx Alveo U50
